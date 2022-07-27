@@ -2,12 +2,14 @@ package com.example.springcloudsecondservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @SpringBootApplication
-public class SpringCloudSecondServiceApplication {
+@EnableEurekaClient
+public class SecondServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringCloudSecondServiceApplication.class, args);
+        SpringApplication.run(SecondServiceApplication.class, args);
     }
 
 }
